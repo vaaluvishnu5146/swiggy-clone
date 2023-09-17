@@ -1,0 +1,187 @@
+body,
+html {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+  display: none;
+}
+
+.page {
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.brand-logo {
+  width: 35px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.nav-item {
+  width: 120px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.slider-btn {
+  width: 35px;
+  height: 35px;
+  background: rgb(226, 226, 231);
+  border-radius: 100%;
+  font-size: 1.2rem;
+}
+
+.offer-slider {
+  > .offer-banner {
+    min-width: 442px;
+    height: 262px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  > .category-banner {
+    min-width: 100px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgb(226, 226, 231);
+}
+
+.restaurant-card {
+  width: 274px;
+  height: auto;
+  cursor: pointer;
+  .card-header {
+    position: relative;
+    .image {
+      width: 100%;
+      height: 182px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(
+        rgba(27, 30, 36, 0) 0%,
+        rgb(27, 30, 36) 84.21%
+      );
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+
+      > .content {
+        height: 33.33%;
+      }
+    }
+  }
+  .card-body {
+    > .restaurant-title {
+      color: rgba(27, 30, 36, 0.78);
+    }
+
+    > .ratings {
+      > .ratings-icon {
+        max-width: 20px;
+      }
+    }
+  }
+}
+.restaurant-card:hover {
+  transform: scale(0.95, 0.95);
+  transform-origin: center center;
+  transition: all 0.1s ease-in 0s;
+}
+
+.food-card {
+  border-bottom: 1px solid rgb(226, 226, 231);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  > .food-card-body {
+    > .content-section {
+      width: 75%;
+
+      > .title {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      > .pricing {
+        font-size: 1rem;
+        font-weight: 500;
+        color: rgba(27, 30, 36, 0.855);
+      }
+
+      > .details {
+        font-size: 0.8rem;
+        color: rgba(27, 30, 36, 0.78);
+      }
+    }
+    > .image-section {
+      position: relative;
+      width: calc(100% - 75%);
+
+      > .food-image {
+        width: 100%;
+      }
+
+      > button {
+        width: 100%;
+        background: #ffffff;
+        font-size: 0.6rem;
+        background-color: lightseagreen;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 560px) {
+  .page {
+    padding: 15px !important;
+  }
+
+  .offer-slider {
+    > .offer-banner {
+      min-width: 250px;
+      height: 150px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    > .category-banner {
+      min-width: 80px;
+      height: 100px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
