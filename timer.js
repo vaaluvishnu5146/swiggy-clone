@@ -36,13 +36,7 @@ function initiateTimer(futureDate = new Date.now(), callback = () => {}) {
   }, interval);
 }
 
-function updateDhoolTimer(
-  days = 0,
-  hrs = 0,
-  min = 0,
-  secs = 0,
-  isExpired = true
-) {
+function updateDhoolTimer(days = 0, hrs = 0, min = 0, secs = 0) {
   const dhoolDealContainer = document.getElementById(
     "dhool-deals-timer-container"
   );
@@ -50,6 +44,13 @@ function updateDhoolTimer(
   const hrsNode = dhoolDealContainer.querySelector("#hrs > h4");
   const minsNode = dhoolDealContainer.querySelector("#mins > h4");
   const secNode = dhoolDealContainer.querySelector("#secs > h4");
+  if (days < 1 && hrs < 1 && min < 1 && secs < 1) {
+    try {
+      localStorage.setItem("dhool-deals-timer-container", true);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   daysNode.innerText = days;
   hrsNode.innerText = hrs;
@@ -72,5 +73,5 @@ function updateEOYSTimer(days = 0, hrs = 0, min = 0, secs = 0) {
   secNode.innerText = secs;
 }
 
-initiateTimer("Sun Sep 23 2023 12:41:00", updateDhoolTimer);
+initiateTimer("Sun Sep 23 2023 12:48:50", updateDhoolTimer);
 initiateTimer("Sun Sep 24 2023 18:00:00", updateEOYSTimer);
