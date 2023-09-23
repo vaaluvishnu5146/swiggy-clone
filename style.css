@@ -154,9 +154,9 @@ p {
 
       > button {
         width: 100%;
-        background: #ffffff;
+        color: #000000;
         font-size: 0.6rem;
-        background-color: lightseagreen;
+        background-color: #fc8019;
         font-weight: 600;
       }
     }

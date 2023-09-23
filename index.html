@@ -97,7 +97,69 @@
         </div>
       </nav>
     </header>
+
     <section class="page">
+      <!-- URGENCY TIMER SECTION -->
+      <div
+        class="alert alert-primary my-3 alert-dismissible fade show"
+        role="alert"
+      >
+        <div class="row align-items-center">
+          <div class="col">
+            <h4>Grab the offer. Hurry up!</h4>
+          </div>
+          <div class="col">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <div
+                  class="row text-center timer"
+                  id="dhool-deals-timer-container"
+                >
+                  <div
+                    class="col d-flex flex-column justify-content-center"
+                    id="days"
+                  >
+                    <h4>00</h4>
+                    <p>Days</p>
+                  </div>
+                  <div
+                    class="col d-flex flex-column justify-content-center"
+                    id="hrs"
+                  >
+                    <h4>00</h4>
+                    <p>Hrs</p>
+                  </div>
+                  <div
+                    class="col d-flex flex-column justify-content-center"
+                    id="mins"
+                  >
+                    <h4>00</h4>
+                    <p>Mins</p>
+                  </div>
+                  <div
+                    class="col d-flex flex-column justify-content-center"
+                    id="secs"
+                  >
+                    <h4>00</h4>
+                    <p>Secs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" id="avail">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
       <!-- OFFERS SECTION -->
       <div class="sliding-section my-5">
         <div class="d-flex mb-2 justify-content-between">
@@ -121,6 +183,66 @@
           class="d-flex offer-slider overflow-x-scroll column-gap-3"
           id="offers-slider"
         ></div>
+      </div>
+      <div
+        class="alert alert-danger my-3 alert-dismissible fade show"
+        role="alert"
+      >
+        <div class="row align-items-center">
+          <div class="col">
+            <h4>End Of Year Sale. Hurry up!</h4>
+          </div>
+          <div class="col">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <div
+                  class="row text-center timer"
+                  id="eoys-deals-timer-container"
+                >
+                  <div
+                    class="col d-flex flex-column justify-content-center"
+                    id="days"
+                  >
+                    <h4>00</h4>
+                    <p>Days</p>
+                  </div>
+                  <div
+                    class="col d-flex flex-column justify-content-center"
+                    id="hrs"
+                  >
+                    <h4>00</h4>
+                    <p>Hrs</p>
+                  </div>
+                  <div
+                    class="col d-flex flex-column justify-content-center"
+                    id="mins"
+                  >
+                    <h4>00</h4>
+                    <p>Mins</p>
+                  </div>
+                  <div
+                    class="col d-flex flex-column justify-content-center"
+                    id="secs"
+                  >
+                    <h4>00</h4>
+                    <p>Secs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" id="avail">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
       </div>
       <!-- CATEGORIES SECTION -->
       <div class="sliding-section my-5">
@@ -187,5 +309,6 @@
     ></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="./script.js"></script>
+    <script src="./timer.js"></script>
   </body>
 </html>
