@@ -34,6 +34,10 @@ p {
   width: 100%;
 }
 
+.h-full {
+  height: 100vh;
+}
+
 .nav-item {
   width: 120px;
   font-size: 1.1rem;
@@ -161,6 +165,20 @@ p {
       }
     }
   }
+}
+
+.btn-primary {
+  background: #fc8019;
+  border: #000000;
+  height: 50px;
+}
+
+.btn-primary:hover {
+  background: #ff7809;
+}
+
+.btn-primary:active {
+  background: #ff7809 !important;
 }
 
 /* MEDIA QUERIES */
