@@ -73,5 +73,20 @@ function updateEOYSTimer(days = 0, hrs = 0, min = 0, secs = 0) {
   secNode.innerText = secs;
 }
 
-initiateTimer("Sun Sep 23 2023 12:48:50", updateDhoolTimer);
-initiateTimer("Sun Sep 24 2023 18:00:00", updateEOYSTimer);
+function updateOfferTimer(days = 0, hrs = 0, min = 0, secs = 0) {
+  const offerDealTimer = document.getElementById("offer-timer");
+  const daysNode = offerDealTimer.querySelector("#days > h1");
+  const hrsNode = offerDealTimer.querySelector("#hrs > h1");
+  const minsNode = offerDealTimer.querySelector("#mins > h1");
+  const secNode = offerDealTimer.querySelector("#secs > h1");
+
+  daysNode.innerText = days;
+  hrsNode.innerText = hrs;
+  minsNode.innerText = min;
+  secNode.innerText = secs;
+}
+
+initiateTimer("Sun Sep 28 2023 12:48:50", updateDhoolTimer);
+initiateTimer("Sun Sep 27 2023 18:00:00", updateEOYSTimer);
+
+initiateTimer("Fri Sep 29 2023 18:00:00", updateOfferTimer);

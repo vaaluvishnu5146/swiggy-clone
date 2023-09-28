@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offer Page</title>
+    <link rel="stylesheet" href="./offerspage.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main
+      class="page-container"
+      style="
+        background-image: url('https://im.rediff.com/cricket/2020/sep/18shah-bcci.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div
+        class="container-fluid h-full d-flex flex-column align-items-center justify-content-center text-light"
+      >
+        <div class="offer-image mb-5"></div>
+        <h1 class="mb-3">GET 10% OFFER</h1>
+        <h6 class="mb-5">Grab the offer before it ends</h6>
+        <div class="w-full timer mb-5 d-flex justify-content-center">
+          <div
+            id="offer-timer"
+            class="row gap-2 align-items-center justify-content-around w-full"
+          >
+            <div
+              class="d-flex flex-column justify-content-center align-items-center text-black col-xs-2 col-sm-2 box"
+              id="days"
+            >
+              <h1>00</h1>
+              <p>Days</p>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center text-black col-xs-2 col-sm-2 box"
+              id="hrs"
+            >
+              <h1>00</h1>
+              <p>Hours</p>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center text-black col-xs-2 col-sm-2 box"
+              id="mins"
+            >
+              <h1>00</h1>
+              <p>Minutes</p>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center text-black col-xs-2 col-sm-2 box"
+              id="secs"
+            >
+              <h1>00</h1>
+              <p>Seconds</p>
+            </div>
+          </div>
+        </div>
+        <button class="offer-button">Claim Offer</button>
+      </div>
+    </main>
+
+    <script>
+      //   let isDelivered = false;
+      //   // SET TIMEOUT
+      //   const deliveryTime = setTimeout(() => {
+      //     // STATEMENTS
+      //     console.log("Delivered the order at 1pm");
+      //     isDelivered = true;
+      //     clearTimers(deliveryTime);
+      //   }, 5000);
+      //   function clearTimers(id) {
+      //     if (id && isDelivered) {
+      //       clearTimeout(id);
+      //     }
+      //   }
+      //   let ticks = 0;
+      //   const maxTick = 5;
+      //   // SET INTERVAL
+      //   const interval = setInterval(handleTicks, 1000);
+
+      //   function handleTicks() {
+      //     if (ticks === maxTick) {
+      //       clearInterval(interval);
+      //       console.log("Timer Ended");
+      //     } else {
+      //       ticks++;
+      //       console.log(ticks);
+      //     }
+      //   }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./timer.js"></script>
+  </body>
+</html>

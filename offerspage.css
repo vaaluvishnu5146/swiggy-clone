@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0px;
+  background: #532461 !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.page-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 560px;
+  margin: 0px auto;
+  height: 100vh;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.222);
+}
+
+.box {
+  height: 80px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.offer-button {
+  width: 100%;
+  height: 50px;
+  border: 0px;
+  border-radius: 5px;
+  background: rgba(255, 154, 0, 1);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  font-size: 1.2rem;
+}
+
+.offer-image {
+  width: 200px;
+  height: 200px;
+  background-image: url("https://res.cloudinary.com/swiggy/image/upload/w_600/v1679511115/DeSo/2023-03/mdm-prebuzz/v2/thumbnail.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
